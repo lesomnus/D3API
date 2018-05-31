@@ -1,0 +1,25 @@
+{
+  "name": "d3api-driver",
+  "version": "0.0.1",
+  "description": "Driver for APIs of Diablo 3 published by Blizzard Entertainment.",
+  "main": "./dist/main",
+  "scripts": {
+    "test": "node ./dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lesomnus/D3API-driver.git"
+  },
+  "keywords": [
+    "diablo 3",
+    "diablo3",
+    "d3"
+  ],
+  "author": "lesomnus",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^4.0.2",
+    "typescript": "^2.8.3"
+  }
+}
