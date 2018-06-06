@@ -1,20 +1,26 @@
 {
     "extends": "tslint-config-airbnb",
-    "rules":{
+    "linterOptions": {
+        "exclude": [
+            "node_modules/**/*",
+            "dist/**/*"
+        ]
+    },
+    "rules": {
         "whitespace": false,
         "variable-name": [true, "ban-keyword", "check-format", "allow-leading-underscore"],
-        "typedef-whitespace":[true, {
+        "typedef-whitespace": [true, {
             "call-signature": "nospace",
             "index-signature": "nospace",
             "parameter": "nospace",
             "property-declaration": "nospace",
             "variable-declaration": "nospace"
         }, {
-          "call-signature": "onespace",
-          "index-signature": "onespace",
-          "parameter": "onespace",
-          "property-declaration": "onespace",
-          "variable-declaration": "onespace"
+            "call-signature": "onespace",
+            "index-signature": "onespace",
+            "parameter": "onespace",
+            "property-declaration": "onespace",
+            "variable-declaration": "onespace"
         }]
     }
 }

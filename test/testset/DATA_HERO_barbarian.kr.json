@@ -1,0 +1,385 @@
+{
+    "slug": "barbarian",
+    "name": "야만용사",
+    "maleName": "야만용사",
+    "femaleName": "야만용사",
+    "icon": "barbarian_male",
+    "skillCategories": [{
+        "slug": "주-기술",
+        "name": "주 기술"
+    }, {
+        "slug": "보조-기술",
+        "name": "보조 기술"
+    }, {
+        "slug": "방어",
+        "name": "방어"
+    }, {
+        "slug": "무력",
+        "name": "무력"
+    }, {
+        "slug": "전술",
+        "name": "전술"
+    }, {
+        "slug": "격노",
+        "name": "격노"
+    }],
+    "skills": {
+        "active": [{
+            "slug": "bash",
+            "name": "후려치기",
+            "icon": "barbarian_bash",
+            "level": 1,
+            "tooltipUrl": "/class/barbarian/active/bash",
+            "description": "생성: 공격할 때마다 분노 6\n\n적을 난폭하게 후려칩니다. 무기 공격력의 320%만큼 피해를 줍니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">생성:</span> 공격할 때마다 분노 <span class=\"d3-color-green\">6</span></p>\n\n<p>적을 난폭하게 후려칩니다. 무기 공격력의 <span class=\"d3-color-green\">320%</span>만큼 피해를 줍니다.</p>"
+        }, {
+            "slug": "hammer-of-the-ancients",
+            "name": "선조의 망치",
+            "icon": "barbarian_hammeroftheancients",
+            "level": 2,
+            "tooltipUrl": "/class/barbarian/active/hammer-of-the-ancients",
+            "description": "소모: 분노 20\n\n거대한 망치를 불러내어 적을 내려칩니다. 바로 앞에 있는 적들에게 무기 공격력의 535%만큼 피해를 줍니다. 선조의 망치에는 보유한 분노 5당 1% 증가한 극대화 확률이 적용됩니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">소모:</span> 분노 <span class=\"d3-color-green\">20</span></p>\n\n<p>거대한 망치를 불러내어 적을 내려칩니다. 바로 앞에 있는 적들에게 무기 공격력의 <span class=\"d3-color-green\">535%</span>만큼 피해를 줍니다. 선조의 망치에는 보유한 분노 <span class=\"d3-color-green\">5</span>당 <span class=\"d3-color-green\">1%</span> 증가한 극대화 확률이 적용됩니다.</p>"
+        }, {
+            "slug": "cleave",
+            "name": "가르기",
+            "icon": "barbarian_cleave",
+            "level": 3,
+            "tooltipUrl": "/class/barbarian/active/cleave",
+            "description": "생성: 공격할 때마다 분노 6\n\n넓게 원호를 그리며 무기를 휘두릅니다. 휘두르는 범위 내의 모든 대상에게 무기 공격력의 200%만큼 피해를 줍니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">생성:</span> 공격할 때마다 분노 <span class=\"d3-color-green\">6</span></p>\n\n<p>넓게 원호를 그리며 무기를 휘두릅니다. 휘두르는 범위 내의 모든 대상에게 무기 공격력의 <span class=\"d3-color-green\">200%</span>만큼 피해를 줍니다.</p>"
+        }, {
+            "slug": "ground-stomp",
+            "name": "발 구르기",
+            "icon": "barbarian_groundstomp",
+            "level": 4,
+            "tooltipUrl": "/class/barbarian/active/ground-stomp",
+            "description": "생성: 분노 15\n재사용 대기시간: 12초\n\n발을 힘껏 굴러 14미터 내의 모든 적을 4초 동안 기절시킵니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">생성:</span> 분노 <span class=\"d3-color-green\">15</span></p>\n<p><span class=\"d3-color-gold\">재사용 대기시간:</span> <span class=\"d3-color-green\">12초</span></p>\n\n<p>발을 힘껏 굴러 <span class=\"d3-color-green\">14미터</span> 내의 모든 적을 <span class=\"d3-color-green\">4초</span> 동안 기절시킵니다.</p>"
+        }, {
+            "slug": "rend",
+            "name": "분쇄",
+            "icon": "barbarian_rend",
+            "level": 5,
+            "tooltipUrl": "/class/barbarian/active/rend",
+            "description": "소모: 분노 20\n\n무기를 휘둘러 12미터 반경의 모든 적에게 출혈을 일으킵니다. 출혈은 5초에 걸쳐 무기 공격력의 1100%만큼 물리 피해를 줍니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">소모:</span> 분노 <span class=\"d3-color-green\">20</span></p>\n\n<p>무기를 휘둘러 <span class=\"d3-color-green\">12미터</span> 반경의 모든 적에게 출혈을 일으킵니다. 출혈은 <span class=\"d3-color-green\">5초</span>에 걸쳐 무기 공격력의 <span class=\"d3-color-green\">1100%</span>만큼 물리 피해를 줍니다.</p>"
+        }, {
+            "slug": "leap",
+            "name": "도약 공격",
+            "icon": "barbarian_leap",
+            "level": 8,
+            "tooltipUrl": "/class/barbarian/active/leap",
+            "description": "생성: 분노 15\n재사용 대기시간: 10초\n\n공중으로 뛰어오른 후 강하게 내리찍습니다. 목표 위치로부터 10미터 내의 모든 적에게 무기 공격력의 180%만큼 피해를 주고 3초 동안 이동 속도를 60% 감소시킵니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">생성:</span> 분노 <span class=\"d3-color-green\">15</span></p>\n<p><span class=\"d3-color-gold\">재사용 대기시간:</span> <span class=\"d3-color-green\">10초</span></p>\n\n<p>공중으로 뛰어오른 후 강하게 내리찍습니다. 목표 위치로부터 <span class=\"d3-color-green\">10미터</span> 내의 모든 적에게 무기 공격력의 <span class=\"d3-color-green\">180%</span>만큼 피해를 주고 <span class=\"d3-color-green\">3초</span> 동안 이동 속도를 <span class=\"d3-color-green\">60%</span> 감소시킵니다.</p>"
+        }, {
+            "slug": "overpower",
+            "name": "제압",
+            "icon": "barbarian_overpower",
+            "level": 9,
+            "tooltipUrl": "/class/barbarian/active/overpower",
+            "description": "재사용 대기시간: 12초\n\n9미터 내의 모든 적에게 무기 공격력의 380%만큼 피해를 줍니다.\n\n극대화 피해를 주면 일정 확률로 제압의 재사용 대기시간이 1초 감소합니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">재사용 대기시간:</span> <span class=\"d3-color-green\">12초</span></p>\n\n<p><span class=\"d3-color-green\">9미터</span> 내의 모든 적에게 무기 공격력의 <span class=\"d3-color-green\">380%</span>만큼 피해를 줍니다.</p>\n\n<p><span class=\"d3-color-yellow\">극대화 피해를 주면 일정 확률로 제압의 재사용 대기시간이 <span class=\"d3-color-green\">1초</span> 감소합니다.</span></p>"
+        }, {
+            "slug": "frenzy",
+            "name": "광분",
+            "icon": "barbarian_frenzy",
+            "level": 11,
+            "tooltipUrl": "/class/barbarian/active/frenzy",
+            "description": "생성: 공격할 때마다 분노 4\n\n적을 공격할 때마다 무기 공격력의 220%만큼 피해를 주며 4초 동안 광분의 공격 속도가 15% 증가합니다. 광분 효과는 최대 5회까지 중첩됩니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">생성:</span> 공격할 때마다 분노 <span class=\"d3-color-green\">4</span></p>\n\n<p>적을 공격할 때마다 무기 공격력의 <span class=\"d3-color-green\">220%</span>만큼 피해를 주며 <span class=\"d3-color-green\">4초</span> 동안 광분의 공격 속도가 <span class=\"d3-color-green\">15%</span> 증가합니다. 광분 효과는 최대 <span class=\"d3-color-green\">5회</span>까지 중첩됩니다.</p>"
+        }, {
+            "slug": "seismic-slam",
+            "name": "대지 강타",
+            "icon": "barbarian_seismicslam",
+            "level": 12,
+            "tooltipUrl": "/class/barbarian/active/seismic-slam",
+            "description": "소모: 분노 30\n\n땅을 내려쳐 파괴적인 충격파를 일으킵니다. 전방 최대 50미터 내의 적에게 부채꼴 범위로 무기 공격력의 620%만큼 피해를 줍니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">소모:</span> 분노 <span class=\"d3-color-green\">30</span></p>\n\n<p>땅을 내려쳐 파괴적인 충격파를 일으킵니다. 전방 최대 <span class=\"d3-color-green\">50미터</span> 내의 적에게 부채꼴 범위로 무기 공격력의 <span class=\"d3-color-green\">620%</span>만큼 피해를 줍니다.</p>"
+        }, {
+            "slug": "revenge",
+            "name": "보복",
+            "icon": "barbarian_revenge",
+            "level": 13,
+            "tooltipUrl": "/class/barbarian/active/revenge",
+            "description": "소모: 충전 1회\n\n근처의 모든 적에게 무기 공격력의 300%만큼 피해를 주고, 적중시킨 적 한 마리당 최대 생명력의 4%를 회복합니다.\n\n보복은 야만용사가 공격에 적중당할 때마다 15% 확률로 충전됩니다. 최대 2회까지 충전됩니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">소모:</span> 충전 <span class=\"d3-color-green\">1회</span></p>\n\n<p>근처의 모든 적에게 무기 공격력의 <span class=\"d3-color-green\">300%</span>만큼 피해를 주고, 적중시킨 적 한 마리당 최대 생명력의 <span class=\"d3-color-green\">4%</span>를 회복합니다.</p>\n\n<p><span class=\"d3-color-yellow\">보복은 야만용사가 공격에 적중당할 때마다</span> <span class=\"d3-color-green\">15%</span> <span class=\"d3-color-yellow\">확률로 충전됩니다. 최대 <span class=\"d3-color-green\">2회</span>까지 충전됩니다.</span></p>"
+        }, {
+            "slug": "threatening-shout",
+            "name": "위협의 외침",
+            "icon": "barbarian_threateningshout",
+            "level": 14,
+            "tooltipUrl": "/class/barbarian/active/threatening-shout",
+            "description": "생성: 분노 15\n재사용 대기시간: 10초\n\n격렬한 함성을 내지릅니다. 25미터 안에 있는 모든 적의 공격력이 15초 동안 20% 감소합니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">생성:</span> 분노 <span class=\"d3-color-green\">15</span></p>\n<p><span class=\"d3-color-gold\">재사용 대기시간:</span> <span class=\"d3-color-green\">10초</span></p>\n\n<p>격렬한 함성을 내지릅니다. <span class=\"d3-color-green\">25미터</span> 안에 있는 모든 적의 공격력이 <span class=\"d3-color-green\">15초</span> 동안 <span class=\"d3-color-green\">20%</span> 감소합니다.</p>"
+        }, {
+            "slug": "sprint",
+            "name": "질주",
+            "icon": "barbarian_sprint",
+            "level": 16,
+            "tooltipUrl": "/class/barbarian/active/sprint",
+            "description": "소모: 분노 20\n\n3초 동안 이동 속도가 30% 증가합니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">소모:</span> 분노 <span class=\"d3-color-green\">20</span></p>\n\n<p><span class=\"d3-color-green\">3초</span> 동안 이동 속도가 <span class=\"d3-color-green\">30%</span> 증가합니다.</p>"
+        }, {
+            "slug": "weapon-throw",
+            "name": "무기 투척",
+            "icon": "x1_barbarian_weaponthrow",
+            "level": 17,
+            "tooltipUrl": "/class/barbarian/active/weapon-throw",
+            "description": "생성: 공격할 때마다 분노 6\n\n적에게 투척 무기를 던져 무기 공격력의 275%만큼 피해를 줍니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">생성:</span> 공격할 때마다 분노 <span class=\"d3-color-green\">6</span></p>\n\n<p>적에게 투척 무기를 던져 무기 공격력의 <span class=\"d3-color-green\">275%</span>만큼 피해를 줍니다.</p>"
+        }, {
+            "slug": "earthquake",
+            "name": "지진",
+            "icon": "barbarian_earthquake",
+            "level": 19,
+            "tooltipUrl": "/class/barbarian/active/earthquake",
+            "description": "소모: 분노 25\n재사용 대기시간: 60초\n\n난폭하게 땅을 뒤흔들어 18미터 내의 모든 적에게 8초에 걸쳐 무기 공격력의 4800%만큼 화염 피해를 줍니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">소모:</span> 분노 <span class=\"d3-color-green\">25</span></p>\n<p><span class=\"d3-color-gold\">재사용 대기시간:</span> <span class=\"d3-color-green\">60초</span></p>\n\n<p>난폭하게 땅을 뒤흔들어 <span class=\"d3-color-green\">18미터</span> 내의 모든 적에게 <span class=\"d3-color-green\">8초</span>에 걸쳐 무기 공격력의 <span class=\"d3-color-green\">4800%</span>만큼 화염 피해를 줍니다.</p>"
+        }, {
+            "slug": "whirlwind",
+            "name": "소용돌이",
+            "icon": "barbarian_whirlwind",
+            "level": 20,
+            "tooltipUrl": "/class/barbarian/active/whirlwind",
+            "description": "소모: 분노 10\n\n소용돌이처럼 세차게 돌며 경로에 있는 모든 적에게 무기 공격력의 340%만큼 피해를 줍니다.\n\n소용돌이 중에는 이동 속도가 100%로 감소합니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">소모:</span> 분노 <span class=\"d3-color-green\">10</span></p>\n\n<p>소용돌이처럼 세차게 돌며 경로에 있는 모든 적에게 무기 공격력의 <span class=\"d3-color-green\">340%</span>만큼 피해를 줍니다.</p>\n\n<p>소용돌이 중에는 이동 속도가 <span class=\"d3-color-green\">100%</span>로 감소합니다.</p>"
+        }, {
+            "slug": "furious-charge",
+            "name": "맹렬한 돌진",
+            "icon": "barbarian_furiouscharge",
+            "level": 21,
+            "tooltipUrl": "/class/barbarian/active/furious-charge",
+            "description": "소모: 충전 1회\n생성: 분노 15\n\n적을 향해 돌진합니다. 돌진 경로에 있는 모든 적을 밀쳐내며 무기 공격력의 600%만큼 피해를 줍니다.\n\n맹렬한 돌진은 10초마다 충전되고 최대 충전 횟수는 1회입니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">소모:</span> 충전 <span class=\"d3-color-green\">1회</span></p>\n<p><span class=\"d3-color-gold\">생성:</span> 분노 <span class=\"d3-color-green\">15</span></p>\n\n<p>적을 향해 돌진합니다. 돌진 경로에 있는 모든 적을 밀쳐내며 무기 공격력의 <span class=\"d3-color-green\">600%</span>만큼 피해를 줍니다.</p>\n\n<p><span class=\"d3-color-yellow\">맹렬한 돌진은 <span class=\"d3-color-green\">10초</span>마다 충전되고 최대 충전 횟수는 <span class=\"d3-color-green\">1회</span>입니다.</span></p>"
+        }, {
+            "slug": "ignore-pain",
+            "name": "고통 감내",
+            "icon": "barbarian_ignorepain",
+            "level": 22,
+            "tooltipUrl": "/class/barbarian/active/ignore-pain",
+            "description": "재사용 대기시간: 30초\n\n5초 동안 받는 모든 피해가 50% 감소하고 5초 동안 모든 제어 방해 효과에 면역이 됩니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">재사용 대기시간:</span> <span class=\"d3-color-green\">30초</span></p>\n\n<p><span class=\"d3-color-green\">5초</span> 동안 받는 모든 피해가 <span class=\"d3-color-green\">50%</span> 감소하고 <span class=\"d3-color-green\">5초</span> 동안 모든 제어 방해 효과에 <span class=\"d3-color-green\">면역</span>이 됩니다.</p>"
+        }, {
+            "slug": "battle-rage",
+            "name": "전투 격노",
+            "icon": "barbarian_battlerage",
+            "level": 22,
+            "tooltipUrl": "/class/barbarian/active/battle-rage",
+            "description": "소모: 분노 20\n\n야만용사가 격노합니다. 120초 동안 공격력이 10% 증가하고, 극대화 확률이 3% 증가합니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">소모:</span> 분노 <span class=\"d3-color-green\">20</span></p>\n\n<p>야만용사가 격노합니다. <span class=\"d3-color-green\">120초</span> 동안 공격력이 <span class=\"d3-color-green\">10%</span> 증가하고, 극대화 확률이 <span class=\"d3-color-green\">3%</span> 증가합니다.</p>"
+        }, {
+            "slug": "call-of-the-ancients",
+            "name": "선조의 귀환",
+            "icon": "barbarian_calloftheancients",
+            "level": 25,
+            "tooltipUrl": "/class/barbarian/active/call-of-the-ancients",
+            "description": "재사용 대기시간: 120초\n\n야만용사의 선조 탈릭, 콜릭, 마도크를 소환합니다. 20초 동안 곁에서 함께 싸우는 선조들은 각자의 기술로 적을 공격하며, 매 공격마다 무기 공격력의 270%만큼 피해를 줍니다.\n\n\n 탈릭은 칼과 방패를 들고 소용돌이와 도약 공격을 사용합니다.\n 콜릭은 거대한 미늘창을 들고 가르기와 맹렬한 돌진을 사용합니다.\n 마도크는 도끼를 양손에 들고 무기 투척과 대지 강타를 사용합니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">재사용 대기시간:</span> <span class=\"d3-color-green\">120초</span></p>\n\n<p>야만용사의 선조 탈릭, 콜릭, 마도크를 소환합니다. <span class=\"d3-color-green\">20초</span> 동안 곁에서 함께 싸우는 선조들은 각자의 기술로 적을 공격하며, 매 공격마다 무기 공격력의 <span class=\"d3-color-green\">270%</span>만큼 피해를 줍니다.</p>\n\n<p><span class=\"tooltip-icon-bullet\"></span> 탈릭은 칼과 방패를 들고 소용돌이와 도약 공격을 사용합니다.<br></br><span class=\"tooltip-icon-bullet\"></span> 콜릭은 거대한 미늘창을 들고 가르기와 맹렬한 돌진을 사용합니다.<br></br><span class=\"tooltip-icon-bullet\"></span> 마도크는 도끼를 양손에 들고 무기 투척과 대지 강타를 사용합니다.</p>"
+        }, {
+            "slug": "ancient-spear",
+            "name": "고대의 작살",
+            "icon": "x1_barbarian_ancientspear",
+            "level": 26,
+            "tooltipUrl": "/class/barbarian/active/ancient-spear",
+            "description": "소모: 분노 25\n\n적을 관통하는 작살을 던져 무기 공격력의 500%만큼 피해를 줍니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">소모:</span> 분노 <span class=\"d3-color-green\">25</span></p>\n\n<p>적을 관통하는 작살을 던져 무기 공격력의 <span class=\"d3-color-green\">500%</span>만큼 피해를 줍니다.</p>"
+        }, {
+            "slug": "war-cry",
+            "name": "전장의 함성",
+            "icon": "x1_barbarian_warcry_v2",
+            "level": 28,
+            "tooltipUrl": "/class/barbarian/active/war-cry",
+            "description": "생성: 분노 20\n재사용 대기시간: 20초\n\n우렁찬 함성을 내지릅니다. 120초 동안 야만용사와 100미터 반경 내 모든 아군의 방어도가 20% 증가합니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">생성:</span> 분노 <span class=\"d3-color-green\">20</span></p>\n<p><span class=\"d3-color-gold\">재사용 대기시간:</span> <span class=\"d3-color-green\">20초</span></p>\n\n<p>우렁찬 함성을 내지릅니다. <span class=\"d3-color-green\">120초</span> 동안 야만용사와 <span class=\"d3-color-green\">100미터</span> 반경 내 모든 아군의 방어도가 <span class=\"d3-color-green\">20%</span> 증가합니다.</p>"
+        }, {
+            "slug": "wrath-of-the-berserker",
+            "name": "광전사의 진노",
+            "icon": "barbarian_wrathoftheberserker",
+            "level": 30,
+            "tooltipUrl": "/class/barbarian/active/wrath-of-the-berserker",
+            "description": "재사용 대기시간: 120초\n\n분노를 고조시켜 20초 동안 여러 능력치를 끌어올립니다.\n\n\n 극대화 확률: 10%\n 공격 속도: 25%\n 회피 확률: 20%\n 이동 속도: 20%",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">재사용 대기시간:</span> <span class=\"d3-color-green\">120초</span></p>\n\n<p>분노를 고조시켜 <span class=\"d3-color-green\">20초</span> 동안 여러 능력치를 끌어올립니다.</p>\n\n<p><span class=\"tooltip-icon-bullet\"></span> 극대화 확률: <span class=\"d3-color-green\">10%</span><br></br><span class=\"tooltip-icon-bullet\"></span> 공격 속도: <span class=\"d3-color-green\">25%</span><br></br><span class=\"tooltip-icon-bullet\"></span> 회피 확률: <span class=\"d3-color-green\">20%</span><br></br><span class=\"tooltip-icon-bullet\"></span> 이동 속도: <span class=\"d3-color-green\">20%</span></p>"
+        }, {
+            "slug": "avalanche",
+            "name": "산사태",
+            "icon": "x1_barbarian_avalanche_v2",
+            "level": 61,
+            "tooltipUrl": "/class/barbarian/active/avalanche",
+            "description": "재사용 대기시간: 30초\n\n육중한 바위를 떨어뜨리는 산사태를 일으켜 범위 내의 모든 적에게 무기 공격력의 2400%만큼 피해를 줍니다.\n\n소모한 분노 25당 재사용 대기시간이 1초만큼 감소합니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-gold\">재사용 대기시간:</span> <span class=\"d3-color-green\">30초</span></p>\n\n<p>육중한 바위를 떨어뜨리는 산사태를 일으켜 범위 내의 모든 적에게 무기 공격력의 <span class=\"d3-color-green\">2400%</span>만큼 피해를 줍니다.</p>\n\n<p><span class=\"d3-color-yellow\">소모한 분노 <span class=\"d3-color-green\">25</span>당 재사용 대기시간이 <span class=\"d3-color-green\">1초</span>만큼 감소합니다.</span></p>"
+        }],
+        "passive": [{
+            "slug": "pound-of-flesh",
+            "name": "요동치는 심장",
+            "icon": "barbarian_passive_poundofflesh",
+            "level": 10,
+            "tooltipUrl": "/class/barbarian/passive/pound-of-flesh",
+            "description": "생명의 구슬로 생명력을 회복하면 15초 동안 초당 생명력 회복량이 2%, 이동 속도가 4% 증가합니다. 이 효과는 최대 5회까지 중첩됩니다.",
+            "descriptionHtml": "<p>생명의 구슬로 생명력을 회복하면 <span class=\"d3-color-green\">15초</span> 동안 초당 생명력 회복량이 <span class=\"d3-color-green\">2%</span>, 이동 속도가 <span class=\"d3-color-green\">4%</span> 증가합니다. 이 효과는 최대 <span class=\"d3-color-green\">5회</span>까지 중첩됩니다.</p>",
+            "flavorText": "\"하늘이 피를 흘릴 때 벼가 자라나듯, 적이 피를 흘릴 때 우리는 강해진다.\" - 추수의 노래"
+        }, {
+            "slug": "ruthless",
+            "name": "무자비",
+            "icon": "barbarian_passive_ruthless",
+            "level": 10,
+            "tooltipUrl": "/class/barbarian/passive/ruthless",
+            "description": "생명력이 30% 미만인 적을 공격할 때 공격력이 40% 증가합니다.",
+            "descriptionHtml": "<p>생명력이 <span class=\"d3-color-green\">30%</span> 미만인 적을 공격할 때 공격력이 <span class=\"d3-color-green\">40%</span> 증가합니다.</p>",
+            "flavorText": "모든 부족은 각자 독특한 방식으로 전사들의 몸에 그림을 그린다. 어떤 부족은 산을 기념하고, 어떤 부족은 불을 경외하는 반면, 타르고스 부족은 죄를 씻는 고통의 미덕을 숭배한다."
+        }, {
+            "slug": "nerves-of-steel",
+            "name": "강철 신경",
+            "icon": "barbarian_passive_nervesofsteel",
+            "level": 13,
+            "tooltipUrl": "/class/barbarian/passive/nerves-of-steel",
+            "description": "죽음에 달하는 피해를 받으면 생명력이 15%로 줄어듭니다. 그 후 3초 동안 받는 모든 피해가 95% 감소하고 모든 제어 방해 효과에 면역이 됩니다\n\n이 효과는 60초에 한 번만 발동됩니다.",
+            "descriptionHtml": "<p>죽음에 달하는 피해를 받으면 생명력이 <span class=\"d3-color-green\">15%</span>로 줄어듭니다. 그 후 <span class=\"d3-color-green\">3초</span> 동안 받는 모든 피해가 <span class=\"d3-color-green\">95%</span> 감소하고 모든 제어 방해 효과에 면역이 됩니다</p>\n\n<p>이 효과는 <span class=\"d3-color-green\">60초</span>에 한 번만 발동됩니다.</p>",
+            "flavorText": "\"그들의 시험은 유년기 때부터 시작된다. 흉포한 짐승의 가죽을 벗기고, 바람 부는 절벽을 오르고, 남부의 병사들조차 울고갈 만큼 무거운 무기를 들고 다니며... 그들이 물러설 줄 모른다는 건 놀라운 사실이 아니다.\" - 던크레이그의 아릭 경"
+        }, {
+            "slug": "weapons-master",
+            "name": "무기의 달인",
+            "icon": "barbarian_passive_weaponsmaster",
+            "level": 16,
+            "tooltipUrl": "/class/barbarian/passive/weapons-master",
+            "description": "주 무기 종류에 따라 각각 이로운 효과를 받습니다.\n도검/단도: 피해 8% 증가\n철퇴/도끼: 극대화 확률 5% 증가\n미늘창/창: 공격 속도 8% 증가\n거대 무기: 적중 시 분노 생성 2 증가",
+            "descriptionHtml": "<p>주 무기 종류에 따라 각각 이로운 효과를 받습니다.</p>\n<p>도검/단도: 피해 <span class=\"d3-color-green\">8%</span> 증가</p>\n<p>철퇴/도끼: 극대화 확률 <span class=\"d3-color-green\">5%</span> 증가</p>\n<p>미늘창/창: 공격 속도 <span class=\"d3-color-green\">8%</span> 증가</p>\n<p>거대 무기: 적중 시 분노 생성 <span class=\"d3-color-green\">2</span> 증가</p>",
+            "flavorText": "\"숲 속에 매복하고 있던 내 부하들이 여행자를 덮쳤지. 하지만 놀란 건 우리였어. 그 예리한 감각하며, 날렵한 움직임, 흠잡을 데 없는 공격까지. 우린 상대도 안 되더라고.\" - 산적 레드잭"
+        }, {
+            "slug": "inspiring-presence",
+            "name": "고무적인 존재",
+            "icon": "barbarian_passive_inspiringpresence",
+            "level": 20,
+            "tooltipUrl": "/class/barbarian/passive/inspiring-presence",
+            "description": "외침의 지속시간이 두 배로 증가합니다. 외침 기술을 사용하면 자신과 100미터 내의 모든 아군이 120초 동안 매초 최대 생명력의 3%를 회복합니다.\n\n외침:\n 전투 격노\n 위협의 외침\n 전장의 함성",
+            "descriptionHtml": "<p>외침의 지속시간이 두 배로 증가합니다. 외침 기술을 사용하면 자신과 <span class=\"d3-color-green\">100미터</span> 내의 모든 아군이 <span class=\"d3-color-green\">120초</span> 동안 매초 최대 생명력의 <span class=\"d3-color-green\">3%</span>를 회복합니다.</p>\n\n<p>외침:<br></br><span class=\"tooltip-icon-bullet\"></span> 전투 격노<br></br><span class=\"tooltip-icon-bullet\"></span> 위협의 외침<br></br><span class=\"tooltip-icon-bullet\"></span> 전장의 함성</p>",
+            "flavorText": "\"적들은 끊임없이 몰려들었고, 전쟁광 카리아는 흉벽 위에서 악마 셋을 창에 꽂아 적진에 내던지며 병사들을 규합하는 함성을 외쳤다.\" - 별이 사라진 밤의 전투 중"
+        }, {
+            "slug": "berserker-rage",
+            "name": "격노한 광전사",
+            "icon": "barbarian_passive_berserkerrage",
+            "level": 20,
+            "tooltipUrl": "/class/barbarian/passive/berserker-rage",
+            "description": "분노가 거의 가득 찼을 때 공격력이 25% 증가합니다.",
+            "descriptionHtml": "<p>분노가 거의 가득 찼을 때 공격력이 <span class=\"d3-color-green\">25%</span> 증가합니다.</p>",
+            "flavorText": "\"누구도 내가 화난 모습은 보고 싶지 않을 것이다.\" - 광전사 바나르"
+        }, {
+            "slug": "bloodthirst",
+            "name": "피의 갈증",
+            "icon": "barbarian_passive_bloodthirst",
+            "level": 24,
+            "tooltipUrl": "/class/barbarian/passive/bloodthirst",
+            "description": "소모한 분노 1당 생명력을 966 회복합니다.\n\n회복량은 생명의 구슬 추가 치유 효과의 1%만큼 증가합니다.",
+            "descriptionHtml": "<p>소모한 분노 <span class=\"d3-color-green\">1</span>당 생명력을 <span class=\"d3-color-green\">966</span> 회복합니다.</p>\n\n<p>회복량은 생명의 구슬 추가 치유 효과의 <span class=\"d3-color-green\">1%</span>만큼 증가합니다.</p>",
+            "flavorText": "\"동정은 나약함이야. 자비를 구하는 적을 매몰차게 내치는 것이 강함이지.\" - 정복자 할라버드"
+        }, {
+            "slug": "animosity",
+            "name": "적개심",
+            "icon": "barbarian_passive_animosity",
+            "level": 27,
+            "tooltipUrl": "/class/barbarian/passive/animosity",
+            "description": "모든 분노 생성량이 10% 증가하고 최대 분노가 20 증가합니다.\n\n강력한 기술들은 대부분 분노를 필요로 합니다.",
+            "descriptionHtml": "<p>모든 분노 생성량이 <span class=\"d3-color-green\">10%</span> 증가하고 최대 분노가 <span class=\"d3-color-green\">20</span> 증가합니다.</p>\n\n<p>강력한 기술들은 대부분 분노를 필요로 합니다.</p>",
+            "flavorText": "\"대부분 수도회에서는 영혼의 바다를 잠재우는 법을 가르치지만, 아리앗 산의 수호자들은 폭풍과 같은 내면의 분노를 있는 그대로 받아들였다.\" - 역사가 알라보크"
+        }, {
+            "slug": "superstition",
+            "name": "미신",
+            "icon": "barbarian_passive_superstition",
+            "level": 30,
+            "tooltipUrl": "/class/barbarian/passive/superstition",
+            "description": "물리 피해를 제외한 모든 피해가 20% 감소합니다. 원거리 또는 원소 피해를 받으면 일정 확률로 분노가 2 생성됩니다.",
+            "descriptionHtml": "<p>물리 피해를 제외한 모든 피해가 <span class=\"d3-color-green\">20%</span> 감소합니다. 원거리 또는 원소 피해를 받으면 일정 확률로 분노가 <span class=\"d3-color-green\">2</span> 생성됩니다.</p>",
+            "flavorText": "\"서부의 마술이 우리에게 가져온 건 병폐 뿐이었다. 우린 이 벽을 힘으로 지었으며, 힘으로 지켜낼 것이다.\" - 그루차크 해머핸드"
+        }, {
+            "slug": "tough-as-nails",
+            "name": "철갑못",
+            "icon": "barbarian_passive_toughasnails",
+            "level": 30,
+            "tooltipUrl": "/class/barbarian/passive/tough-as-nails",
+            "description": "방어도가 25% 증가합니다.\n가시가 100% 증가합니다.",
+            "descriptionHtml": "<p>방어도가 <span class=\"d3-color-green\">25%</span> 증가합니다.</p>\n<p>가시가 <span class=\"d3-color-green\">100%</span> 증가합니다.</p>",
+            "flavorText": "시간이 지나면 상처도 한 겹의 갑옷이 된다."
+        }, {
+            "slug": "no-escape",
+            "name": "탈출 불가",
+            "icon": "barbarian_passive_noescape",
+            "level": 35,
+            "tooltipUrl": "/class/barbarian/passive/no-escape",
+            "description": "15미터 밖의 적에게 무기 투척, 대지 강타, 고대의 작살, 산사태로 주는 피해가 30% 증가합니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-green\">15미터</span> 밖의 적에게 무기 투척, 대지 강타, 고대의 작살, 산사태로 주는 피해가 <span class=\"d3-color-green\">30%</span> 증가합니다.</p>",
+            "flavorText": "\"도망치려면 도망쳐라. 죽기 전에 고생이 필요하다면 말이지.\" - 오론 군즈"
+        }, {
+            "slug": "relentless",
+            "name": "근성",
+            "icon": "barbarian_passive_relentless",
+            "level": 40,
+            "tooltipUrl": "/class/barbarian/passive/relentless",
+            "description": "생명력이 35% 미만이면 모든 기술에 소모되는 분노가 50% 감소하고, 소모한 분노당 생명력 회복량이 두 배로 증가하며, 받는 모든 피해가 50% 감소합니다.",
+            "descriptionHtml": "<p>생명력이 <span class=\"d3-color-green\">35%</span> 미만이면 모든 기술에 소모되는 분노가 <span class=\"d3-color-green\">50%</span> 감소하고, 소모한 분노당 생명력 회복량이 두 배로 증가하며, 받는 모든 피해가 <span class=\"d3-color-green\">50%</span> 감소합니다.</p>",
+            "flavorText": "어떤 전사들은 짙은 패전의 기운 속에서도 패배란 단어를 입에 담지조차 않는다."
+        }, {
+            "slug": "brawler",
+            "name": "싸움꾼",
+            "icon": "barbarian_passive_brawler",
+            "level": 45,
+            "tooltipUrl": "/class/barbarian/passive/brawler",
+            "description": "12미터 안에 적이 3마리 이상 있으면 공격력이 20% 증가합니다.",
+            "descriptionHtml": "<p><span class=\"d3-color-green\">12미터</span> 안에 적이 <span class=\"d3-color-green\">3마리</span> 이상 있으면 공격력이 <span class=\"d3-color-green\">20%</span> 증가합니다.</p>",
+            "flavorText": "\"난 칼이 두 자루다. 너희 한 놈당 하나씩.\" - 검사 카르네"
+        }, {
+            "slug": "juggernaut",
+            "name": "괴수",
+            "icon": "barbarian_passive_juggernaut",
+            "level": 50,
+            "tooltipUrl": "/class/barbarian/passive/juggernaut",
+            "description": "모든 제어 방해 효과의 지속시간이 50% 감소합니다. 추가로, 기절하거나, 빙결되거나, 이동 불가 상태가 되거나, 공포에 빠질 때마다 일정 확률로 최대 생명력의 20%가 회복됩니다.",
+            "descriptionHtml": "<p>모든 제어 방해 효과의 지속시간이 <span class=\"d3-color-green\">50%</span> 감소합니다. 추가로, 기절하거나, 빙결되거나, 이동 불가 상태가 되거나, 공포에 빠질 때마다 일정 확률로 최대 생명력의 <span class=\"d3-color-green\">20%</span>가 회복됩니다.</p>",
+            "flavorText": "\"맹세할 수 있네. 열 발이 넘는 화살을 명중시켰는데 끄떡도 하지 않더군. 북쪽에서 온 야만용사라는 미치광이들이야. 놈들을 막을 방법은 없어.\" - 철벽의 성채 병사"
+        }, {
+            "slug": "unforgiving",
+            "name": "비정",
+            "icon": "barbarian_passive_unforgiving",
+            "level": 55,
+            "tooltipUrl": "/class/barbarian/passive/unforgiving",
+            "description": "분노가 더 이상 손실되지 않고 1초마다 2씩 생성됩니다.",
+            "descriptionHtml": "<p>분노가 더 이상 손실되지 않고 <span class=\"d3-color-green\">1초</span>마다 <span class=\"d3-color-green\">2</span>씩 생성됩니다.</p>",
+            "flavorText": "\"순간 그는 선조가 겪은 모든 고통을 깨닫고 모두를 대신해서 복수하겠노라고 결심한 것 같았다.\" - 역사가 알라보크"
+        }, {
+            "slug": "boon-of-bulkathos",
+            "name": "불카토스의 은총",
+            "icon": "barbarian_passive_boonofbulkathos",
+            "level": 60,
+            "tooltipUrl": "/class/barbarian/passive/boon-of-bulkathos",
+            "description": "다음 기술들의 재사용 대기시간이 감소합니다.\n 지진의 재사용 대기시간이 15초 감소합니다.\n 선조의 귀환의 재사용 대기시간이 30초 감소합니다.\n 광전사의 진노의 재사용 대기 시간이 30초 감소합니다.",
+            "descriptionHtml": "<p>다음 기술들의 재사용 대기시간이 감소합니다.<br></br><span class=\"tooltip-icon-bullet\"></span> 지진의 재사용 대기시간이 <span class=\"d3-color-green\">15초</span> 감소합니다.<br></br><span class=\"tooltip-icon-bullet\"></span> 선조의 귀환의 재사용 대기시간이 <span class=\"d3-color-green\">30초</span> 감소합니다.<br></br><span class=\"tooltip-icon-bullet\"></span> 광전사의 진노의 재사용 대기 시간이 <span class=\"d3-color-green\">30초</span> 감소합니다.</p>",
+            "flavorText": "불멸의 왕이 용맹한 자들에게 은총을 내리리라."
+        }, {
+            "slug": "earthen-might",
+            "name": "대지의 힘",
+            "icon": "x1_barbarian_passive_earthenmight",
+            "level": 64,
+            "tooltipUrl": "/class/barbarian/passive/earthen-might",
+            "description": "산사태나 지진이 발동하면 분노를 30 생성합니다.",
+            "descriptionHtml": "<p>산사태나 지진이 발동하면 분노를 <span class=\"d3-color-green\">30</span> 생성합니다.</p>",
+            "flavorText": "\"이곳은 나의 도시였다. 하지만 처형을 기다리는 내게 이곳은 곧 감옥이다. 땅이 흔들린다. 야만인들이 세계의 기원이라 할 수 있는 이곳을 시끄럽게 웃으며 무참히 부수고 파괴하고 있다. 아, 슬프도다. 그들의 미개한 삶을 나는 왜 약하다고 생각했던가.\" - 로렌, 사마우렌의 파네프"
+        }, {
+            "slug": "sword-and-board",
+            "name": "검과 방패",
+            "icon": "x1_barbarian_passive_swordandboard",
+            "level": 66,
+            "tooltipUrl": "/class/barbarian/passive/sword-and-board",
+            "description": "방패를 들고 있으면 받는 모든 피해가 30%, 분노 소모량이 20% 감소합니다.",
+            "descriptionHtml": "<p>방패를 들고 있으면 받는 모든 피해가 <span class=\"d3-color-green\">30%</span>, 분노 소모량이 <span class=\"d3-color-green\">20%</span> 감소합니다.</p>",
+            "flavorText": "\"적의 공격을 막는 것은 회심의 일격을 선사하는 것만큼이나 확실하게 상대의 전의를 꺾을 수 있다.\" - 전투의 달인 칼조르"
+        }, {
+            "slug": "rampage",
+            "name": "광란",
+            "icon": "x1_barbarian_passive_rampage",
+            "level": 68,
+            "tooltipUrl": "/class/barbarian/passive/rampage",
+            "description": "적을 처치하거나 처치하는 데 도움을 주면 8초 동안 힘이 1%만큼 증가합니다. 이 효과는 최대 25회까지 중첩됩니다.",
+            "descriptionHtml": "<p>적을 처치하거나 처치하는 데 도움을 주면 <span class=\"d3-color-green\">8초</span> 동안 힘이 <span class=\"d3-color-green\">1%</span>만큼 증가합니다. 이 효과는 최대 <span class=\"d3-color-green\">25회</span>까지 중첩됩니다.</p>",
+            "flavorText": "\"전투는 끝날 기미가 보이지 않았고, 우리의 육체와 정신은 지칠대로 지쳐있었다. 하지만 죽음이 만연한 그 현장에서 그들은 더욱 날뛰었고, 우리가 쓰러질 때마다 피를 갈구하는 그들의 욕망은 더욱 거세졌다. 그들을 막는 건 불가능하다.\" - 하사 페쉬코브, 야만용사들의 공성전 현장에서. 케지스탄력 1123"
+        }]
+    }
+}

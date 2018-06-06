@@ -1,0 +1,32 @@
+{
+    "id": "Sword_2H_003",
+    "slug": "apprentice-flamberge",
+    "name": "수습생의 불꽃날 검",
+    "cost": 1000,
+    "reagents": [{
+        "quantity": 5,
+        "item": {
+            "id": "Crafting_AssortedParts_01",
+            "slug": "reusable-parts",
+            "name": "재활용 부품",
+            "icon": "crafting_assortedparts_01_demonhunter_male",
+            "path": "item/reusable-parts-Crafting_AssortedParts_01"
+        }
+    }, {
+        "quantity": 5,
+        "item": {
+            "id": "Crafting_Magic_01",
+            "slug": "arcane-dust",
+            "name": "신비한 가루",
+            "icon": "crafting_magic_01_demonhunter_male",
+            "path": "item/arcane-dust-Crafting_Magic_01"
+        }
+    }],
+    "itemProduced": {
+        "id": "Sword_2H_003",
+        "slug": "dervish",
+        "name": "춤칼",
+        "icon": "sword_2h_003_demonhunter_male",
+        "path": "item/dervish-Sword_2H_003"
+    }
+}

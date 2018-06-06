@@ -1,12 +1,13 @@
 import * as Enums from './enums';
 
+export namespace Raw {
 //
 // ACT API
 //
 
 export type Quest = {
   readonly id: number;
-  readonly name: string;
+  readonly name: String;
   readonly slug: string;
 };
 
@@ -17,8 +18,12 @@ export type Act = {
   readonly quests: Quest[];
 };
 
+export type ActIndex = {
+  readonly acts: Act[];
+};
+
 //
-// ARTISIAN AND RECIPE API
+// ARTISAN AND RECIPE API
 //
 
 export type ItemTypeIndex = {
@@ -45,12 +50,8 @@ export type Recipe = {
   readonly reagents: Reagent[];
 };
 
-export type ArtisianSlug = 'blacksmith'
-                         | 'jeweler'
-                         | 'mystic';
-
-export type Artisian = {
-  readonly slug: ArtisianSlug;
+export type Artisan = {
+  readonly slug: string;
   readonly name: string;
   readonly portrait: string;
   readonly trainig: {
@@ -77,7 +78,7 @@ export type Skill = {
 };
 
 export type Follower = {
-  readonly slug: Enums.Follower;
+  readonly slug: string;
   readonly name: string;
   readonly realName: string;
   readonly skills: Skill[];
@@ -91,16 +92,8 @@ export type PassiveSkill = Skill & {
   readonly flavorText: string;
 };
 
-export type ClassSlug = 'barbarian'
-                      | 'crusader'
-                      | 'demon-hunter'
-                      | 'monk'
-                      | 'necromancer'
-                      | 'witch-doctor'
-                      | 'wizard';
-
 export type Class = {
-  readonly slug: ClassSlug;
+  readonly slug: string;
   readonly name: string;
   readonly maleName: string;
   readonly femaleName: string;
@@ -181,8 +174,8 @@ export type Hero = {
   readonly id: number;
   readonly name: string;
   readonly class: string;
-  readonly classSlug: ClassSlug;
-  readonly gender: Enums.Gender;
+  readonly classSlug: string;
+  readonly gender: number;
   readonly level: number;
   readonly kills: {
     readonly elites: number;
@@ -203,7 +196,13 @@ export type Profile = {
     readonly hardcoreMonsters: number;
   },
   readonly timePlayed: {
-    readonly [P in Enums.Class]: number;
+    barbarian: number;
+    crusader: number;
+    demonHunter: number;
+    monk: number;
+    necromancer: number;
+    witchDoctor: number;
+    wizard: number;
   }
   readonly highestHardcoreLevel: number;
 };
@@ -224,23 +223,14 @@ export type Account = Profile & {
     readonly act5: boolean;
   }
   readonly seasonalProfiles: {
-    readonly season13: (Profile & {
-      readonly seasonId: number;
-    });
-    readonly season12: (Profile & {
-      readonly seasonId: number;
-    });
-    readonly season0: (Profile & {
-      readonly seasonId: number;
+    readonly [seasonN: string]: (Profile & {
+      readonly seasonId: string;
     });
   }
-} & {
-  readonly [Key in Enums.Artisian]: {
-    readonly slug: ArtisianSlug;
-    readonly level: number;
-  }
-} & {
-  // what a shits
+
+  readonly blacksmith: {slug: 'blacksmith'; level: number};
+  readonly jeweler: {slug: 'jeweler'; level: number};
+  readonly mystic: {slug: 'mystic'; level: number};
   readonly blacksmithSeason: {slug: 'blacksmith'; level: number};
   readonly jewelerSeason: {slug: 'jeweler'; level: number};
   readonly mysticSeason: {slug: 'mystic'; level: number};
@@ -256,7 +246,7 @@ export type Gem = {
   readonly item: ItemType;
   readonly attributes: string[];
   readonly isGem: boolean;    // is Gem
-  readonly isJewel: boolean;  // is Legendary Gem = Jewel
+  readonly isJewel: boolean;  // is 'Legendary Gem' = Jewel
 };
 
 export type Jewel = Gem & {
@@ -285,3 +275,36 @@ export type DetailedItem = Item & {
   readonly gems: Gem[];
   readonly dye: Dye;
 };
+}
+
+export type Quest = Raw.Quest;
+export type Act = Raw.Act & {
+  readonly slug: 'act-i' | 'act-ii' | 'act-iii' | 'act-iv' | 'act-v'
+  readonly number: 1|2|3|4|5;
+};
+export type ActIndex = Raw.ActIndex;
+export type ItemTypeIndex = Raw.ItemTypeIndex;
+export type ItemType = Raw.ItemType;
+export type Reagent = Raw.Reagent;
+export type Recipe = Raw.Recipe;
+export type Artisan = Raw.Artisan & {
+  readonly slug: Enums.Artisan;
+};
+export type Skill = Raw.Skill;
+export type Follower = Raw.Follower & {
+  readonly slug: Enums.Follower;
+};
+export type PassiveSkill = Raw.PassiveSkill;
+export type Class = Raw.Class & {
+  readonly slug: Enums.Class;
+};
+export type Rune = Raw.Rune;
+export type Attribute = Raw.Attribute;
+export type Item = Raw.Item;
+export type Hero = Raw.Hero;
+export type Profile = Raw.Profile;
+export type Accout = Raw.Account;
+export type Gem = Raw.Gem;
+export type Jewel = Raw.Jewel;
+export type Dye = Raw.Dye;
+export type DetailedItem = Raw.DetailedItem;

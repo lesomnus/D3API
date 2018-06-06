@@ -1,0 +1,54 @@
+{
+    "id": "Unique_Sword_2H_104_x1",
+    "slug": "corrupted-ashbringer",
+    "name": "타락한 파멸의 인도자",
+    "icon": "unique_sword_2h_104_x1_demonhunter_male",
+    "tooltipParams": "/item/corrupted-ashbringer-Unique_Sword_2H_104_x1",
+    "requiredLevel": 70,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "은 장갑 한 짝을 끼고 번쩍이는 보석이 박힌 검을 휘두르던 성기사에 대한 이야기가 전해집니다. 그는 되살아난 시체와 뒤틀린 어미를 수천 마리 처치하였으나, 끝내 비극적인 최후를 맞이했습니다. 이 검은 전설 속의 검과 흡사하지만, 그 보석은 검고 위협적입니다. 어쩌면 그 이야기에는 이면이 있을지도요?",
+    "flavorTextHtml": "<span class=\"d3-color-ffc7b377\">은 장갑 한 짝을 끼고 번쩍이는 보석이 박힌 검을 휘두르던 성기사에 대한 이야기가 전해집니다. 그는 되살아난 시체와 뒤틀린 어미를 수천 마리 처치하였으나, 끝내 비극적인 최후를 맞이했습니다. 이 검은 전설 속의 검과 흡사하지만, 그 보석은 검고 위협적입니다. 어쩌면 그 이야기에는 이면이 있을지도요?</span>",
+    "typeName": "전설 양손 도검",
+    "type": {
+        "twoHanded": true,
+        "id": "Sword2H"
+    },
+    "damage": "무기 공격력 1137~1702\n초당 공격 횟수 1.15",
+    "dps": "1,632.4",
+    "damageHtml": "<p><span class=\"d3-color-FF888888\">무기 공격력</span> 1137~1702</p>\n<p><span class=\"d3-color-FF888888\">초당 공격 횟수</span> 1.15</p>",
+    "color": "orange",
+    "isSeasonRequiredToDrop": false,
+    "seasonRequiredToDrop": -1,
+    "slots": ["right-hand", "left-hand", "follower-left-hand"],
+    "attributes": {
+        "primary": [{
+            "textHtml": "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">독 무기 공격력 +[1177~1439]~[1410~1788]</span>",
+            "text": "독 무기 공격력 +[1177~1439]~[1410~1788]"
+        }],
+        "secondary": [{
+            "textHtml": "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">적 처치 시 생명력 +[9142~13,371]</span>",
+            "text": "적 처치 시 생명력 +[9142~13,371]"
+        }, {
+            "textHtml": "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">언데드에게 주는 피해 +[9~15]%</span>",
+            "text": "언데드에게 주는 피해 +[9~15]%"
+        }, {
+            "textHtml": "<span class=\"d3-color-ffff8000\"><span class=\"tooltip-icon-utility\"></span> 적 처치 시 일정 확률로 해골이 나타나 함께 싸움. 해골이 5마리가 되면 폭발하면서 1마리마다 무기 공격력의 1000%만큼 피해를 주고 짧은 시간 동안 검이 파멸의 인도자로 변함. 파멸의 인도자로 공격하면 적을 불태우며 무기 공격력의 <span class=\"d3-color-magic\">5462%</span>만큼 신성 피해를 줌</span> <span class=\"d3-color-ff9b9b9b\">[5000~6000]%</span>",
+            "text": "적 처치 시 일정 확률로 해골이 나타나 함께 싸움. 해골이 5마리가 되면 폭발하면서 1마리마다 무기 공격력의 1000%만큼 피해를 주고 짧은 시간 동안 검이 파멸의 인도자로 변함. 파멸의 인도자로 공격하면 적을 불태우며 무기 공격력의 5462%만큼 신성 피해를 줌 [5000~6000]%"
+        }],
+        "other": []
+    },
+    "randomAffixes": [{
+        "oneOf": [{
+            "textHtml": "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">힘 +[946~1125]</span>",
+            "text": "힘 +[946~1125]"
+        }, {
+            "textHtml": "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">지능 +[946~1125]</span>",
+            "text": "지능 +[946~1125]"
+        }, {
+            "textHtml": "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">민첩 +[946~1125]</span>",
+            "text": "민첩 +[946~1125]"
+        }]
+    }],
+    "setItems": []
+}

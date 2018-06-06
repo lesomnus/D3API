@@ -12,7 +12,7 @@ export enum Locale {
     US = 'en_US',
 }
 
-export enum Artisian {
+export enum Artisan {
     Blacksmith  = 'blacksmith',
     Jewerler    = 'jeweler',
     Mystic      = 'mystic',
