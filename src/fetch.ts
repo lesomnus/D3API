@@ -1,15 +1,14 @@
-import axios from 'axios';
-import * as Enums from './enums';
-import * as Schems from './schemes';
+import axios from "axios";
+import * as Enums from "./enums";
 
-const base = 'api.battle.net';
+const base = "api.battle.net";
 
 export default async function fetch(option: {
   endpoint: string;
   region: Enums.Region;
   locale: Enums.Locale;
   apiKey: string;
-}){
+}) {
   const url = `https://${
     option.region
   }.${base}/d3${

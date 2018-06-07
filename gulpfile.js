@@ -25,10 +25,11 @@ gulp.task('test-build', ['test-clean'], () => {
 });
 
 gulp.task('test-only', ()=> gulp
-    .src('test/*.spec.ts')
+    .src('test/*.spec.ts', {read: false})
     .pipe(mocha({
         reporter: 'nyan',
-        require: ['ts-node/register']
+        require: ['ts-node/register'],
+        timeout: 10 * 1000
     }))
 );
 
