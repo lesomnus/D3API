@@ -46,7 +46,7 @@ gulp.task('dist-clean', () => gulp
     .pipe(clean())
 );
 
-gulp.task('dist-build', () => {
+gulp.task('dist-build', ['dist-clean'], () => {
     var tsProject = ts
         .createProject('tsconfig.json', {
             'declaration': true

@@ -53,7 +53,7 @@ describe("Fetching", ()=> {
 
   it("should get all acts", tester(
     "test/testset/DATA_ACT.kr.json",
-    new D3API().get.all.acts()
+    new D3API().get.all.acts
       .from(Region.KR).in(Locale.KR).using(apiKey),
   ));
   it("should get act 1", tester(

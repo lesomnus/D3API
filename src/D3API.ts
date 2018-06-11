@@ -25,16 +25,16 @@ export class D3API {
 
   public async resolve(): Promise<any> {
     const descript = this._getDescript();
-    if(descript.region) { throw new Error("Region not provided"); }
-    if(descript.locale) { throw new Error("locale not provided"); }
-    if(descript.apiKey) { throw new Error("apiKey not provided"); }
-    if(descript.endpoint) { throw new Error("endpoint not provided"); }
+    if(!descript.region) { throw new Error("Region not provided"); }
+    if(!descript.locale) { throw new Error("locale not provided"); }
+    if(!descript.apiKey) { throw new Error("apiKey not provided"); }
+    if(!descript.endpoint) { throw new Error("endpoint not provided"); }
 
     this._endpoint = undefined;
     return await fetch(descript);
   }
 
-  private _getDescript() {
+  protected _getDescript() {
     return {
       region: this._region,
       locale: this._locale,
@@ -44,7 +44,7 @@ export class D3API {
   }
 
   private _setEndpoint(endpoint: string) {
-    if(!this._endpoint) { console.warn("endpoint overwited"); }
+    if(this._endpoint) { console.warn("endpoint overwited"); }
     this._endpoint = endpoint;
   }
 
@@ -80,9 +80,14 @@ export class D3API {
     return this;
   }
 
+  private get act(): D3API {
+    this._setEndpoint("/data/act");
+    return this;
+  }
+
   public get: {
     all: {
-      acts: ()                      =>D3API;
+      acts: D3API;
       of: (slug: any)               =>D3API;
       itemTypes: ()                 =>D3API;
       items: {
@@ -105,10 +110,7 @@ export class D3API {
     };
   } = {
     all: {
-      acts: (): D3API=> {
-        this._setEndpoint(`/data/act`);
-        return this;
-      },
+      acts: this.act,
       of: this.getAllOf,
       itemTypes: (): D3API=> {
         return this;
@@ -159,4 +161,13 @@ export class D3API {
       };
     },
   };
+}
+
+class _D3API_ACT extends D3API {
+  protected _getDescript() {
+    return {
+      ...super._getDescript(),
+      endpoint: "/data/act",
+    };
+  }
 }
