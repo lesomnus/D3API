@@ -1,5 +1,3 @@
-import * as Schems from './schemes';
-import * as Enums from './enums';
-import * as D3D from './Driver';
+import * as D3D from "./D3API";
 
 export default D3D;

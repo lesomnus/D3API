@@ -2,23 +2,23 @@ import * as Enums from "./enums";
 import fetch from "./fetch";
 import * as Schems from "./schemes";
 
-export class Driver {
+export class D3API {
   private _apiKey: undefined|string = undefined;
   private _region: undefined|Enums.Region = undefined;
   private _locale: undefined|Enums.Locale = undefined;
   private _endpoint: string;
 
-  public using(apiKey: string): Driver {
+  public using(apiKey: string): D3API {
     this._apiKey = apiKey;
     return this;
   }
 
-  public from(region: Enums.Region): Driver {
+  public from(region: Enums.Region): D3API {
     this._region = region;
     return this;
   }
 
-  public in(locale: Enums.Locale): Driver {
+  public in(locale: Enums.Locale): D3API {
     this._locale = locale;
     return this;
   }
@@ -45,10 +45,10 @@ export class Driver {
   }
 
   private getAllOf: {
-    (artisan: Enums.Artisan): Driver;
-    (follower: Enums.Follower): Driver;
-    (className: Enums.Class): Driver;
-  } = (slug: any): Driver=> {
+    (artisan: Enums.Artisan): D3API;
+    (follower: Enums.Follower): D3API;
+    (className: Enums.Class): D3API;
+  } = (slug: any): D3API=> {
     switch(slug) {
       case Enums.Artisan.Blacksmith:
       case Enums.Artisan.Jewerler:
@@ -78,12 +78,12 @@ export class Driver {
 
   public get = {
     all: {
-      acts: (): Driver=> {
+      acts: (): D3API=> {
         this._setEndpoint(`/data/act`);
         return this;
       },
       of: this.getAllOf,
-      itemTypes: (): Driver=> {
+      itemTypes: (): D3API=> {
         return this;
       },
       items: {
@@ -92,13 +92,13 @@ export class Driver {
         },
       },
     },
-    act: (actId: number): Driver=> {
+    act: (actId: number): D3API=> {
       this._setEndpoint(`/data/act/${actId}`);
       return this;
     },
     recipe: (recipeSlug: string)=> {
       return {
-        of: (artisan: Enums.Artisan): Driver=> {
+        of: (artisan: Enums.Artisan): D3API=> {
           this._setEndpoint(`/data/artisan/${artisan}/recipe/${recipeSlug}`);
           return this;
         },
@@ -106,25 +106,25 @@ export class Driver {
     },
     skill: (skillSlug: string)=> {
       return {
-        of: (className: Enums.Class): Driver=> {
+        of: (className: Enums.Class): D3API=> {
           this._setEndpoint(`/data/hero/${className}/skill/${skillSlug}`);
           return this;
         },
       };
     },
-    item: (itemSlugAndId: string): Driver=> {
+    item: (itemSlugAndId: string): D3API=> {
       this._setEndpoint(`/data/item/${itemSlugAndId}`);
       return this;
     },
     profile: {
-      of: (battleTag: string): Driver=> {
+      of: (battleTag: string): D3API=> {
         this._setEndpoint(`/profile/${battleTag}`);
         return this;
       },
     },
     hero: (heroId: number)=> {
       return {
-        of: (battleTag: string): Driver=> {
+        of: (battleTag: string): D3API=> {
           this._setEndpoint(`/profile/${battleTag}/hero/${heroId}`);
           return this;
         },

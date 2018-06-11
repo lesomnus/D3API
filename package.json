@@ -1,10 +1,10 @@
 {
-  "name": "d3api-driver",
+  "name": "d3api",
   "version": "0.0.1",
   "description": "Driver for APIs of Diablo 3 published by Blizzard Entertainment.",
   "main": "./dist/d3api-driver.js",
   "scripts": {
-    "test": "gulp && node ./dist/d3api-driver.js"
+    "test": "gulp && node ./dist/D3API.js"
   },
   "repository": {
     "type": "git",
