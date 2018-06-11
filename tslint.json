@@ -25,6 +25,8 @@
             "parameter": "onespace",
             "property-declaration": "onespace",
             "variable-declaration": "onespace"
-        }]
+        }],
+        "max-classes-per-file": false,
+        "class-name": false
     }
 }

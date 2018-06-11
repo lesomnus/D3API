@@ -24,19 +24,23 @@ export class D3API {
   }
 
   public async resolve(): Promise<any> {
-    if(!this._region) { throw new Error("Region not provided"); }
-    if(!this._locale) { throw new Error("locale not provided"); }
-    if(!this._apiKey) { throw new Error("apiKey not provided"); }
-    if(!this._endpoint) { throw new Error("endpoint not provided"); }
+    const descript = this._getDescript();
+    if(descript.region) { throw new Error("Region not provided"); }
+    if(descript.locale) { throw new Error("locale not provided"); }
+    if(descript.apiKey) { throw new Error("apiKey not provided"); }
+    if(descript.endpoint) { throw new Error("endpoint not provided"); }
 
-    const endpoint = this._endpoint;
     this._endpoint = undefined;
-    return await fetch({
+    return await fetch(descript);
+  }
+
+  private _getDescript() {
+    return {
       region: this._region,
       locale: this._locale,
       apiKey: this._apiKey,
-      endpoint,
-    });
+      endpoint: this._endpoint,
+    };
   }
 
   private _setEndpoint(endpoint: string) {
@@ -76,7 +80,30 @@ export class D3API {
     return this;
   }
 
-  public get = {
+  public get: {
+    all: {
+      acts: ()                      =>D3API;
+      of: (slug: any)               =>D3API;
+      itemTypes: ()                 =>D3API;
+      items: {
+        of: (itemTypeSlug: string)  =>D3API;
+      }
+    };
+    act: (actId: number)            =>D3API;
+    recipe: (recipeSlug: string)    =>{
+      of: (itemTypeSlug: string)      =>D3API;
+    };
+    skill: (skillSlug: string)      =>{
+      of: (className: Enums.Class)    =>D3API;
+    };
+    item: (itemSlugAndId: string)   =>D3API;
+    profile: {
+      of: (battleTag: string)       =>D3API;
+    };
+    hero: (heroId: number)          =>{
+      of: (battleTag: string)         =>D3API;
+    };
+  } = {
     all: {
       acts: (): D3API=> {
         this._setEndpoint(`/data/act`);
@@ -89,6 +116,7 @@ export class D3API {
       items: {
         of: (itemTypeSlug: string)=> {
          this. _setEndpoint(`/data/item-type/${itemTypeSlug}`);
+         return this;
         },
       },
     },
