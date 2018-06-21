@@ -8,6 +8,13 @@ export class D3API {
   private _locale: undefined|Enums.Locale = undefined;
   private _endpoint: string;
 
+  constructor() {
+    Object.defineProperty(this.get.all, "acts",
+      { get: this._getAllActs.bind(this) });
+    Object.defineProperty(this.get.all, "itemTypes",
+      { get: this._getAllItemTypes.bind(this) });
+  }
+
   public using(apiKey: string): D3API {
     this._apiKey = apiKey;
     return this;
@@ -34,7 +41,7 @@ export class D3API {
     return await fetch(descript);
   }
 
-  protected _getDescript() {
+  private _getDescript() {
     return {
       region: this._region,
       locale: this._locale,
@@ -48,7 +55,7 @@ export class D3API {
     this._endpoint = endpoint;
   }
 
-  private getAllOf: {
+  private _getAllOf: {
     (artisan: Enums.Artisan): D3API;
     (follower: Enums.Follower): D3API;
     (className: Enums.Class): D3API;
@@ -80,8 +87,13 @@ export class D3API {
     return this;
   }
 
-  private get act(): D3API {
+  private _getAllActs(): D3API {
     this._setEndpoint("/data/act");
+    return this;
+  }
+
+  private _getAllItemTypes(): D3API {
+    this._setEndpoint("/data/item-type");
     return this;
   }
 
@@ -89,7 +101,7 @@ export class D3API {
     all: {
       acts: D3API;
       of: (slug: any)               =>D3API;
-      itemTypes: ()                 =>D3API;
+      itemTypes: D3API;
       items: {
         of: (itemTypeSlug: string)  =>D3API;
       }
@@ -110,11 +122,9 @@ export class D3API {
     };
   } = {
     all: {
-      acts: this.act,
-      of: this.getAllOf,
-      itemTypes: (): D3API=> {
-        return this;
-      },
+      acts: this,
+      of: this._getAllOf,
+      itemTypes: this,
       items: {
         of: (itemTypeSlug: string)=> {
          this. _setEndpoint(`/data/item-type/${itemTypeSlug}`);
@@ -161,13 +171,4 @@ export class D3API {
       };
     },
   };
-}
-
-class _D3API_ACT extends D3API {
-  protected _getDescript() {
-    return {
-      ...super._getDescript(),
-      endpoint: "/data/act",
-    };
-  }
 }

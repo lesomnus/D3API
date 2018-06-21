@@ -1,0 +1,445 @@
+[{
+    "id": "CraftingPlan_MysticTransmog",
+    "name": "형상변환 도안",
+    "path": "item-type/craftingplanmystictransmog"
+}, {
+    "id": "Helm_WitchDoctor",
+    "name": "투구",
+    "path": "item-type/helmwitchdoctor"
+}, {
+    "id": "GreaterShard",
+    "name": "거대 파편",
+    "path": "item-type/greatershard"
+}, {
+    "id": "Shoulders_Barbarian",
+    "name": "어깨 방어구",
+    "path": "item-type/shouldersbarbarian"
+}, {
+    "id": "Legs_Crusader",
+    "name": "바지",
+    "path": "item-type/legscrusader"
+}, {
+    "id": "Gloves_DemonHunter",
+    "name": "장갑",
+    "path": "item-type/glovesdemonhunter"
+}, {
+    "id": "Legs_WitchDoctor",
+    "name": "바지",
+    "path": "item-type/legswitchdoctor"
+}, {
+    "id": "Gloves_Monk",
+    "name": "장갑",
+    "path": "item-type/glovesmonk"
+}, {
+    "id": "ChestArmor_Necromancer",
+    "name": "가슴 방어구",
+    "path": "item-type/chestarmornecromancer"
+}, {
+    "id": "Boots_Monk",
+    "name": "장화",
+    "path": "item-type/bootsmonk"
+}, {
+    "id": "ScrollBuff",
+    "name": "두루마리",
+    "path": "item-type/scrollbuff"
+}, {
+    "id": "ChestArmor_Monk",
+    "name": "가슴 방어구",
+    "path": "item-type/chestarmormonk"
+}, {
+    "id": "Legs_Monk",
+    "name": "바지",
+    "path": "item-type/legsmonk"
+}, {
+    "id": "UpgradeableJewel",
+    "name": "보석",
+    "path": "item-type/upgradeablejewel"
+}, {
+    "id": "Boots_Barbarian",
+    "name": "장화",
+    "path": "item-type/bootsbarbarian"
+}, {
+    "id": "CraftingReagent",
+    "name": "제작 재료",
+    "path": "item-type/craftingreagent"
+}, {
+    "id": "Boots_Necromancer",
+    "name": "장화",
+    "path": "item-type/bootsnecromancer"
+}, {
+    "id": "HealthPotion",
+    "name": "물약",
+    "path": "item-type/healthpotion"
+}, {
+    "id": "CombatStaff",
+    "name": "대봉",
+    "path": "item-type/combatstaff"
+}, {
+    "id": "Helm_Barbarian",
+    "name": "투구",
+    "path": "item-type/helmbarbarian"
+}, {
+    "id": "FistWeapon",
+    "name": "주먹 무기",
+    "path": "item-type/fistweapon"
+}, {
+    "id": "Legs_Wizard",
+    "name": "바지",
+    "path": "item-type/legswizard"
+}, {
+    "id": "Helm_Crusader",
+    "name": "투구",
+    "path": "item-type/helmcrusader"
+}, {
+    "id": "Gloves_WitchDoctor",
+    "name": "장갑",
+    "path": "item-type/gloveswitchdoctor"
+}, {
+    "id": "CraftingPlanLegendary_Smith",
+    "name": "대장 기술 도면",
+    "path": "item-type/craftingplanlegendarysmith"
+}, {
+    "id": "Bracers",
+    "name": "손목 방어구",
+    "path": "item-type/bracers"
+}, {
+    "id": "Boots_Crusader",
+    "name": "장화",
+    "path": "item-type/bootscrusader"
+}, {
+    "id": "EnchantressSpecial",
+    "name": "요술사 소지품",
+    "path": "item-type/enchantressspecial"
+}, {
+    "id": "MysteryWeapon1H",
+    "name": "무기",
+    "path": "item-type/mysteryweapon1h"
+}, {
+    "id": "CeremonialDagger",
+    "name": "의식용 칼",
+    "path": "item-type/ceremonialdagger"
+}, {
+    "id": "Helm_Necromancer",
+    "name": "투구",
+    "path": "item-type/helmnecromancer"
+}, {
+    "id": "VoodooMask",
+    "name": "부두교 가면",
+    "path": "item-type/voodoomask"
+}, {
+    "id": "Dagger",
+    "name": "단도",
+    "path": "item-type/dagger"
+}, {
+    "id": "Belt_Barbarian",
+    "name": "거대 허리띠",
+    "path": "item-type/beltbarbarian"
+}, {
+    "id": "Boots_Wizard",
+    "name": "장화",
+    "path": "item-type/bootswizard"
+}, {
+    "id": "Amulet",
+    "name": "목걸이",
+    "path": "item-type/amulet"
+}, {
+    "id": "MysteryWeapon2H",
+    "name": "무기",
+    "path": "item-type/mysteryweapon2h"
+}, {
+    "id": "NecromancerOffhand",
+    "name": "성물",
+    "path": "item-type/necromanceroffhand"
+}, {
+    "id": "Scythe2H",
+    "name": "양손 낫",
+    "path": "item-type/scythe2h"
+}, {
+    "id": "Spear",
+    "name": "창",
+    "path": "item-type/spear"
+}, {
+    "id": "Scroll",
+    "name": "두루마리",
+    "path": "item-type/scroll"
+}, {
+    "id": "Gloves_Wizard",
+    "name": "장갑",
+    "path": "item-type/gloveswizard"
+}, {
+    "id": "Staff",
+    "name": "지팡이",
+    "path": "item-type/staff"
+}, {
+    "id": "Sword",
+    "name": "도검",
+    "path": "item-type/sword"
+}, {
+    "id": "Gloves_Crusader",
+    "name": "장갑",
+    "path": "item-type/glovescrusader"
+}, {
+    "id": "Shard",
+    "name": "파편",
+    "path": "item-type/shard"
+}, {
+    "id": "Scythe1H",
+    "name": "낫",
+    "path": "item-type/scythe1h"
+}, {
+    "id": "Quiver",
+    "name": "화살통",
+    "path": "item-type/quiver"
+}, {
+    "id": "Gloves_Necromancer",
+    "name": "장갑",
+    "path": "item-type/glovesnecromancer"
+}, {
+    "id": "Flail2H",
+    "name": "양손 도리깨",
+    "path": "item-type/flail2h"
+}, {
+    "id": "ChestArmor_DemonHunter",
+    "name": "가슴 방어구",
+    "path": "item-type/chestarmordemonhunter"
+}, {
+    "id": "Flail1H",
+    "name": "도리깨",
+    "path": "item-type/flail1h"
+}, {
+    "id": "GeneralUtility",
+    "name": "소비용품",
+    "path": "item-type/generalutility"
+}, {
+    "id": "Crossbow",
+    "name": "쇠뇌",
+    "path": "item-type/crossbow"
+}, {
+    "id": "Shoulders_Necromancer",
+    "name": "어깨",
+    "path": "item-type/shouldersnecromancer"
+}, {
+    "id": "Sword2H",
+    "name": "양손 도검",
+    "path": "item-type/sword2h"
+}, {
+    "id": "MightyWeapon1H",
+    "name": "거대 무기",
+    "path": "item-type/mightyweapon1h"
+}, {
+    "id": "Legs_Barbarian",
+    "name": "바지",
+    "path": "item-type/legsbarbarian"
+}, {
+    "id": "WizardHat",
+    "name": "마법사 모자",
+    "path": "item-type/wizardhat"
+}, {
+    "id": "MightyWeapon2H",
+    "name": "양손 거대 무기",
+    "path": "item-type/mightyweapon2h"
+}, {
+    "id": "Polearm",
+    "name": "미늘창",
+    "path": "item-type/polearm"
+}, {
+    "id": "ChestArmor_Barbarian",
+    "name": "가슴 방어구",
+    "path": "item-type/chestarmorbarbarian"
+}, {
+    "id": "CraftingPlan_Smith",
+    "name": "대장 기술 도면",
+    "path": "item-type/craftingplansmith"
+}, {
+    "id": "Helm_DemonHunter",
+    "name": "투구",
+    "path": "item-type/helmdemonhunter"
+}, {
+    "id": "Helm_Wizard",
+    "name": "투구",
+    "path": "item-type/helmwizard"
+}, {
+    "id": "CraftingPlan_Jeweler",
+    "name": "보석 세공 도안",
+    "path": "item-type/craftingplanjeweler"
+}, {
+    "id": "SpiritStone_Monk",
+    "name": "공력 구슬",
+    "path": "item-type/spiritstonemonk"
+}, {
+    "id": "GenericChestArmor",
+    "name": "가슴 방어구",
+    "path": "item-type/genericchestarmor"
+}, {
+    "id": "HandXbow",
+    "name": "손쇠뇌",
+    "path": "item-type/handxbow"
+}, {
+    "id": "CrusaderShield",
+    "name": "성전사 방패",
+    "path": "item-type/crusadershield"
+}, {
+    "id": "Gloves_Barbarian",
+    "name": "장갑",
+    "path": "item-type/glovesbarbarian"
+}, {
+    "id": "Shield",
+    "name": "방패",
+    "path": "item-type/shield"
+}, {
+    "id": "Shoulders_WitchDoctor",
+    "name": "어깨 방어구",
+    "path": "item-type/shoulderswitchdoctor"
+}, {
+    "id": "Legs_Necromancer",
+    "name": "바지",
+    "path": "item-type/legsnecromancer"
+}, {
+    "id": "Shoulders_Wizard",
+    "name": "어깨 방어구",
+    "path": "item-type/shoulderswizard"
+}, {
+    "id": "Boots_DemonHunter",
+    "name": "장화",
+    "path": "item-type/bootsdemonhunter"
+}, {
+    "id": "ChestArmor",
+    "name": "가슴 방어구",
+    "path": "item-type/chestarmor"
+}, {
+    "id": "Shoulders_Monk",
+    "name": "어깨 방어구",
+    "path": "item-type/shouldersmonk"
+}, {
+    "id": "GenericHelm",
+    "name": "투구",
+    "path": "item-type/generichelm"
+}, {
+    "id": "Shoulders",
+    "name": "어깨 방어구",
+    "path": "item-type/shoulders"
+}, {
+    "id": "ChestArmor_Wizard",
+    "name": "가슴 방어구",
+    "path": "item-type/chestarmorwizard"
+}, {
+    "id": "PortalDevice",
+    "name": "차원문 장치",
+    "path": "item-type/portaldevice"
+}, {
+    "id": "ChestArmor_Crusader",
+    "name": "가슴 방어구",
+    "path": "item-type/chestarmorcrusader"
+}, {
+    "id": "ScoundrelSpecial",
+    "name": "건달 기념품",
+    "path": "item-type/scoundrelspecial"
+}, {
+    "id": "GenericBelt",
+    "name": "허리띠",
+    "path": "item-type/genericbelt"
+}, {
+    "id": "Boots_WitchDoctor",
+    "name": "장화",
+    "path": "item-type/bootswitchdoctor"
+}, {
+    "id": "Mace",
+    "name": "철퇴",
+    "path": "item-type/mace"
+}, {
+    "id": "Orb",
+    "name": "마력원",
+    "path": "item-type/orb"
+}, {
+    "id": "Dye",
+    "name": "염료",
+    "path": "item-type/dye"
+}, {
+    "id": "Gold",
+    "name": "금화",
+    "path": "item-type/gold"
+}, {
+    "id": "Axe",
+    "name": "도끼",
+    "path": "item-type/axe"
+}, {
+    "id": "Gloves",
+    "name": "장갑",
+    "path": "item-type/gloves"
+}, {
+    "id": "Helm",
+    "name": "투구",
+    "path": "item-type/helm"
+}, {
+    "id": "Gem",
+    "name": "보석",
+    "path": "item-type/gem"
+}, {
+    "id": "Legs",
+    "name": "바지",
+    "path": "item-type/legs"
+}, {
+    "id": "TrainingTome",
+    "name": "훈련의 고서",
+    "path": "item-type/trainingtome"
+}, {
+    "id": "Shoulders_DemonHunter",
+    "name": "어깨 방어구",
+    "path": "item-type/shouldersdemonhunter"
+}, {
+    "id": "ChestArmor_WitchDoctor",
+    "name": "가슴 방어구",
+    "path": "item-type/chestarmorwitchdoctor"
+}, {
+    "id": "Bow",
+    "name": "활",
+    "path": "item-type/bow"
+}, {
+    "id": "Ring",
+    "name": "반지",
+    "path": "item-type/ring"
+}, {
+    "id": "Axe2H",
+    "name": "양손 도끼",
+    "path": "item-type/axe2h"
+}, {
+    "id": "Mace2H",
+    "name": "양손 철퇴",
+    "path": "item-type/mace2h"
+}, {
+    "id": "Mojo",
+    "name": "액막이",
+    "path": "item-type/mojo"
+}, {
+    "id": "Boots",
+    "name": "장화",
+    "path": "item-type/boots"
+}, {
+    "id": "Quest",
+    "name": "퀘스트",
+    "path": "item-type/quest"
+}, {
+    "id": "TemplarSpecial",
+    "name": "기사단원 유물",
+    "path": "item-type/templarspecial"
+}, {
+    "id": "Helm_Monk",
+    "name": "투구",
+    "path": "item-type/helmmonk"
+}, {
+    "id": "Shoulders_Crusader",
+    "name": "어깨 방어구",
+    "path": "item-type/shoulderscrusader"
+}, {
+    "id": "Wand",
+    "name": "마법봉",
+    "path": "item-type/wand"
+}, {
+    "id": "Legs_DemonHunter",
+    "name": "바지",
+    "path": "item-type/legsdemonhunter"
+}, {
+    "id": "Cloak",
+    "name": "망토",
+    "path": "item-type/cloak"
+}]

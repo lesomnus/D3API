@@ -12,6 +12,7 @@ import {
 } from "./build/enums";
 
 import * as chai from "chai";
+chai.config.showDiff = false;
 const expect = chai.expect;
 
 //
@@ -47,10 +48,15 @@ describe("Fetching", ()=> {
         await getJSON(path),
       ];
 
-      expect(res).to.deep.equal(ans);
+      if(Array.isArray(res)) {
+        expect(res).to.deep.include.members(ans);
+      } else {
+        expect(res).deep.include(ans);
+      }
     };
   }
 
+  // ACT API
   it("should get all acts", tester(
     "test/testset/DATA_ACT.kr.json",
     new D3API().get.all.acts
@@ -61,11 +67,15 @@ describe("Fetching", ()=> {
     new D3API().get.act(1)
       .from(Region.KR).in(Locale.KR).using(apiKey),
   ));
+
+  // ARTISAN AND RECIPE API
   it("should get recipe apprentice-flamberge of blacksmith", tester(
     "test/testset/DATA_ARTISAN_blacksmith_RECIPE_apprentice-flamberge.kr.json",
     new D3API().get.recipe("apprentice-flamberge").of(Artisan.Blacksmith)
       .from(Region.KR).in(Locale.KR).using(apiKey),
   ));
+
+  // CHARACTER CLASS AND SKILL API
   it("should get all of barbarian", tester(
     "test/testset/DATA_HERO_barbarian.kr.json",
     new D3API().get.all.of(Class.Barbarian)
@@ -76,4 +86,26 @@ describe("Fetching", ()=> {
     new D3API().get.skill("bash").of(Class.Barbarian)
       .from(Region.KR).in(Locale.KR).using(apiKey),
   ));
+
+  // ITEM TYPE API
+  it("should get all itemtypes", tester(
+    "test/testset/DATA_ITEM-TYPE.kr.json",
+    new D3API().get.all.itemTypes
+      .from(Region.KR).in(Locale.KR).using(apiKey),
+  ));
+  it("should get all items of sword2h", tester(
+    "test/testset/DATA_ITEM-TYPE_sword2h.kr.json",
+    new D3API().get.all.items.of("sword2h")
+      .from(Region.KR).in(Locale.KR).using(apiKey),
+  ));
+
+  // ITEM API
+  it("should get all item corrupted-ashbringer-Unique_Sword_2H_104_x1", tester(
+    "test/testset/DATA_ITEM_corrupted-ashbringer-Unique_Sword_2H_104_x1.kr.json",
+    new D3API().get.item("corrupted-ashbringer-Unique_Sword_2H_104_x1")
+      .from(Region.KR).in(Locale.KR).using(apiKey),
+  ));
+
+  // PROFILE API
+
 });

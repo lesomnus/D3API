@@ -12,6 +12,12 @@ export enum Locale {
     US = "en_US",
 }
 
+//
+// NOTICE!!!
+// Artisan, Follower and Class should "not" have same key name.
+// reason: D3::getAllOf()
+//
+
 export enum Artisan {
     Blacksmith  = "blacksmith",
     Jewerler    = "jeweler",

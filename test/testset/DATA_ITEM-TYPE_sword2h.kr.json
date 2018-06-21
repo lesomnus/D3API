@@ -1,0 +1,223 @@
+[{
+    "id": "Sword_2H_002",
+    "slug": "flamberge",
+    "name": "불꽃날 검",
+    "icon": "sword_2h_002_demonhunter_male",
+    "path": "item/flamberge-Sword_2H_002"
+}, {
+    "id": "Sword_2H_006",
+    "slug": "claymore",
+    "name": "십자 검",
+    "icon": "sword_2h_006_demonhunter_male",
+    "path": "item/claymore-Sword_2H_006"
+}, {
+    "id": "Sword_2H_205",
+    "slug": "oni-blade",
+    "name": "신검",
+    "icon": "sword_2h_205_demonhunter_male",
+    "path": "item/oni-blade-Sword_2H_205"
+}, {
+    "id": "Sword_2H_004",
+    "slug": "executioner-sword",
+    "name": "참수 검",
+    "icon": "sword_2h_004_demonhunter_male",
+    "path": "item/executioner-sword-Sword_2H_004"
+}, {
+    "id": "Unique_Sword_2H_003_x1",
+    "slug": "warmonger",
+    "name": "전쟁광",
+    "icon": "unique_sword_2h_003_x1_demonhunter_male",
+    "path": "item/warmonger-Unique_Sword_2H_003_x1"
+}, {
+    "id": "Unique_Sword_2H_014_x1",
+    "slug": "splintered-oar",
+    "name": "쪼개진 노",
+    "icon": "unique_sword_2h_014_x1_demonhunter_male",
+    "path": "item/splintered-oar-Unique_Sword_2H_014_x1"
+}, {
+    "id": "Unique_Sword_2H_014_1xx",
+    "slug": "splintered-oar",
+    "name": "쪼개진 노",
+    "icon": "unique_sword_2h_014_1xx_demonhunter_male",
+    "path": "item/splintered-oar-Unique_Sword_2H_014_1xx"
+}, {
+    "id": "Sword_2H_101",
+    "slug": "great-sword",
+    "name": "대형 검",
+    "icon": "sword_2h_101_demonhunter_male",
+    "path": "item/great-sword-Sword_2H_101"
+}, {
+    "id": "Unique_Sword_2H_011_x1",
+    "slug": "blackguard",
+    "name": "무법자",
+    "icon": "unique_sword_2h_011_x1_demonhunter_male",
+    "path": "item/blackguard-Unique_Sword_2H_011_x1"
+}, {
+    "id": "Unique_Sword_2H_008_x1",
+    "slug": "the-sultan-of-blinding-sand",
+    "name": "눈부신 모래의 왕",
+    "icon": "unique_sword_2h_008_x1_demonhunter_male",
+    "path": "item/the-sultan-of-blinding-sand-Unique_Sword_2H_008_x1"
+}, {
+    "id": "Sword_2H_103",
+    "slug": "kilij",
+    "name": "대신월도",
+    "icon": "sword_2h_103_demonhunter_male",
+    "path": "item/kilij-Sword_2H_103"
+}, {
+    "id": "Unique_Sword_2H_102_x1",
+    "slug": "cams-rebuttal",
+    "name": "캄의 반증",
+    "icon": "unique_sword_2h_102_x1_demonhunter_male",
+    "path": "item/cams-rebuttal-Unique_Sword_2H_102_x1"
+}, {
+    "id": "Sword_2H_204",
+    "slug": "colossus-blade",
+    "name": "큰 날",
+    "icon": "sword_2h_204_demonhunter_male",
+    "path": "item/colossus-blade-Sword_2H_204"
+}, {
+    "id": "Unique_Sword_2H_001_x1",
+    "slug": "the-grandfather",
+    "name": "한아비",
+    "icon": "unique_sword_2h_001_x1_demonhunter_male",
+    "path": "item/the-grandfather-Unique_Sword_2H_001_x1"
+}, {
+    "id": "Unique_Sword_2H_004_x1",
+    "slug": "scourge",
+    "name": "재앙",
+    "icon": "unique_sword_2h_004_x1_demonhunter_male",
+    "path": "item/scourge-Unique_Sword_2H_004_x1"
+}, {
+    "id": "Sword_2H_001",
+    "slug": "twohanded-sword",
+    "name": "양손 검",
+    "icon": "sword_2h_001_demonhunter_male",
+    "path": "item/twohanded-sword-Sword_2H_001"
+}, {
+    "id": "Unique_Sword_2H_002_x1",
+    "slug": "the-zweihander",
+    "name": "츠바이헨더",
+    "icon": "unique_sword_2h_002_x1_demonhunter_male",
+    "path": "item/the-zweihander-Unique_Sword_2H_002_x1"
+}, {
+    "id": "Sword_2H_301",
+    "slug": "gothic-blade",
+    "name": "고딕 검",
+    "icon": "sword_2h_301_demonhunter_male",
+    "path": "item/gothic-blade-Sword_2H_301"
+}, {
+    "id": "Sword_2H_105",
+    "slug": "nagamaki",
+    "name": "장도",
+    "icon": "sword_2h_105_demonhunter_male",
+    "path": "item/nagamaki-Sword_2H_105"
+}, {
+    "id": "Sword_2H_201",
+    "slug": "highland-sword",
+    "name": "고산지 검",
+    "icon": "sword_2h_201_demonhunter_male",
+    "path": "item/highland-sword-Sword_2H_201"
+}, {
+    "id": "Sword_2H_206",
+    "slug": "warlord-sword",
+    "name": "군주의 검",
+    "icon": "sword_2h_206_demonhunter_male",
+    "path": "item/warlord-sword-Sword_2H_206"
+}, {
+    "id": "Sword_2H_005",
+    "slug": "nodachi",
+    "name": "대도",
+    "icon": "sword_2h_005_demonhunter_male",
+    "path": "item/nodachi-Sword_2H_005"
+}, {
+    "id": "Sword_2H_302",
+    "slug": "kingslayer",
+    "name": "왕시해자",
+    "icon": "sword_2h_302_demonhunter_male",
+    "path": "item/kingslayer-Sword_2H_302"
+}, {
+    "id": "Sword_2H_106",
+    "slug": "grand-sword",
+    "name": "거대 검",
+    "icon": "sword_2h_106_demonhunter_male",
+    "path": "item/grand-sword-Sword_2H_106"
+}, {
+    "id": "Unique_Sword_2H_014_104",
+    "slug": "splintered-oar",
+    "name": "쪼개진 노",
+    "icon": "unique_sword_2h_014_104_demonhunter_male",
+    "path": "item/splintered-oar-Unique_Sword_2H_014_104"
+}, {
+    "id": "Unique_Sword_2H_010_x1",
+    "slug": "maximus",
+    "name": "막시무스",
+    "icon": "unique_sword_2h_010_x1_demonhunter_male",
+    "path": "item/maximus-Unique_Sword_2H_010_x1"
+}, {
+    "id": "Unique_Sword_2H_104_x1",
+    "slug": "corrupted-ashbringer",
+    "name": "타락한 파멸의 인도자",
+    "icon": "unique_sword_2h_104_x1_demonhunter_male",
+    "path": "item/corrupted-ashbringer-Unique_Sword_2H_104_x1"
+}, {
+    "id": "Unique_Sword_2H_014",
+    "slug": "splintered-oar",
+    "name": "쪼개진 노",
+    "icon": "unique_sword_2h_014_demonhunter_male",
+    "path": "item/splintered-oar-Unique_Sword_2H_014"
+}, {
+    "id": "Unique_Sword_2H_101_x1",
+    "slug": "stalgards-decimator",
+    "name": "스탈가드의 분리자",
+    "icon": "unique_sword_2h_101_x1_demonhunter_male",
+    "path": "item/stalgards-decimator-Unique_Sword_2H_101_x1"
+}, {
+    "id": "P61_Unique_Sword_2H_012_x1",
+    "slug": "faithful-memory",
+    "name": "믿음의 기억",
+    "icon": "p61_unique_sword_2h_012_x1_demonhunter_male",
+    "path": "item/faithful-memory-P61_Unique_Sword_2H_012_x1"
+}, {
+    "id": "Sword_2H_003",
+    "slug": "dervish",
+    "name": "춤칼",
+    "icon": "sword_2h_003_demonhunter_male",
+    "path": "item/dervish-Sword_2H_003"
+}, {
+    "id": "Sword_2H_203",
+    "slug": "yatagan",
+    "name": "대곡도",
+    "icon": "sword_2h_203_demonhunter_male",
+    "path": "item/yatagan-Sword_2H_203"
+}, {
+    "id": "Sword_2H_104",
+    "slug": "mameluke",
+    "name": "대언월도",
+    "icon": "sword_2h_104_demonhunter_male",
+    "path": "item/mameluke-Sword_2H_104"
+}, {
+    "id": "Sword_2H_102",
+    "slug": "reaver",
+    "name": "약탈 검",
+    "icon": "sword_2h_102_demonhunter_male",
+    "path": "item/reaver-Sword_2H_102"
+}, {
+    "id": "Sword_2H_202",
+    "slug": "brimstone-sword",
+    "name": "유황석 검",
+    "icon": "sword_2h_202_demonhunter_male",
+    "path": "item/brimstone-sword-Sword_2H_202"
+}, {
+    "id": "Unique_Sword_2H_103_x1",
+    "slug": "blood-brother",
+    "name": "피의 형제",
+    "icon": "unique_sword_2h_103_x1_demonhunter_male",
+    "path": "item/blood-brother-Unique_Sword_2H_103_x1"
+}, {
+    "id": "P61_Unique_Sword_2H_007_x1",
+    "slug": "blade-of-prophecy",
+    "name": "예언의 칼",
+    "icon": "p61_unique_sword_2h_007_x1_demonhunter_male",
+    "path": "item/blade-of-prophecy-P61_Unique_Sword_2H_007_x1"
+}]
