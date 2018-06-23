@@ -41,7 +41,8 @@ gulp.task('test', ['test-build'], ()=> gulp
     .src('test/*.spec.ts')
     .pipe(mocha({
         reporter: 'nyan',
-        require: ['ts-node/register']
+        require: ['ts-node/register'],
+        timeout: (process.env.TEST_DEEP ? 10 : 5 ) * 1000
     }))
 );
 gulp.task('test-deep', ()=>{

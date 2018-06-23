@@ -27,6 +27,7 @@
             "variable-declaration": "onespace"
         }],
         "max-classes-per-file": false,
-        "class-name": false
-    }
+        "class-name": false,
+        "no-namespace": false
+    },
 }

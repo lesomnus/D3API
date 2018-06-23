@@ -125,7 +125,7 @@ export class D3API {
       }},
     }}},
     profile: {
-      for: (battleTag: string)       =>D3API;
+      for: (battleTag: string)      =>D3API;
     };
     hero: (heroId: number)          =>{
       in: (battleTag: string)         =>D3API;

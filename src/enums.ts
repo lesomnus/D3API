@@ -1,4 +1,5 @@
 export enum Region {
+    CN = "cn",
     EU = "eu",
     KR = "kr",
     TW = "tw",
@@ -6,6 +7,7 @@ export enum Region {
 }
 
 export enum Locale {
+    CN = "zh_CN",
     EU = "en_GB",
     KR = "ko_KR",
     TW = "zh_TW",
