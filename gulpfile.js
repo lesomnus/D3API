@@ -29,9 +29,13 @@ gulp.task('test-only', ()=> gulp
     .pipe(mocha({
         reporter: 'nyan',
         require: ['ts-node/register'],
-        timeout: 10 * 1000
+        timeout: (process.env.TEST_DEEP ? 10 : 5 ) * 1000
     }))
 );
+gulp.task('test-deep-only', ()=>{
+    process.env.TEST_DEEP = true;
+    gulp.run('test-only');
+});
 
 gulp.task('test', ['test-build'], ()=> gulp
     .src('test/*.spec.ts')
@@ -40,6 +44,10 @@ gulp.task('test', ['test-build'], ()=> gulp
         require: ['ts-node/register']
     }))
 );
+gulp.task('test-deep', ()=>{
+    process.env.TEST_DEEP = true;
+    gulp.run('test');
+});
 
 gulp.task('dist-clean', () => gulp
     .src('dist/*', { read: false })

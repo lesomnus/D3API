@@ -16,6 +16,11 @@ chai.config.showDiff = false;
 const expect = chai.expect;
 
 //
+// config
+//
+const isDeepTest = process.env.TEST_DEEP || false;
+
+//
 // util
 //
 const readFile = promisify(_readFile);
@@ -40,6 +45,11 @@ const apiKey = getJSONSync("test/config.json").apiKey;
 describe("Fetching", ()=> {
   function tester(path: string, driver: D3API) {
     return async ()=> {
+      if(!isDeepTest) {
+        await driver.resolve();
+        return;
+      }
+
       let res;
       let ans;
 
@@ -107,5 +117,24 @@ describe("Fetching", ()=> {
   ));
 
   // PROFILE API
+  if(!isDeepTest) { it("should get profile for SOMNUS-31333 from kr", tester("",
+    new D3API().get.profile.for("SOMNUS-31333")
+    .from(Region.KR).in(Locale.KR).using(apiKey),
+  )); }
+
+  if(!isDeepTest) { it("should get hero 68225979 in SOMNUS-31333 from kr", tester("",
+    new D3API().get.hero(68225979).in("SOMNUS-31333")
+    .from(Region.KR).in(Locale.KR).using(apiKey),
+  )); }
+
+  if(!isDeepTest) { it("should get items belongs to hero 68225979 in SOMNUS-31333 from kr", tester("",
+    new D3API().get.items.belonging.to.hero(68225979).in("SOMNUS-31333")
+    .from(Region.KR).in(Locale.KR).using(apiKey),
+  )); }
+
+  if(!isDeepTest) { it("should get items belongs to followeres of hero 68225979 in SOMNUS-31333 from kr", tester("",
+    new D3API().get.items.belonging.to.followers.of.hero(68225979).in("SOMNUS-31333")
+    .from(Region.KR).in(Locale.KR).using(apiKey),
+  )); }
 
 });

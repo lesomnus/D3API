@@ -114,11 +114,21 @@ export class D3API {
       of: (className: Enums.Class)    =>D3API;
     };
     item: (itemSlugAndId: string)   =>D3API;
+    items: { belonging: { to: {
+      hero: (heroId: number)        =>{
+        in: (battleTag: string)       =>D3API;
+      },
+      followers: { of: {
+        hero: (heroId: number)        =>{
+          in: (battleTag: string)       =>D3API;
+        },
+      }},
+    }}},
     profile: {
-      of: (battleTag: string)       =>D3API;
+      for: (battleTag: string)       =>D3API;
     };
     hero: (heroId: number)          =>{
-      of: (battleTag: string)         =>D3API;
+      in: (battleTag: string)         =>D3API;
     };
   } = {
     all: {
@@ -156,15 +166,35 @@ export class D3API {
       this._setEndpoint(`/data/item/${itemSlugAndId}`);
       return this;
     },
+    items: { belonging: { to: {
+      hero: (heroId: number)=> {
+        return {
+          in: (battleTag: string): D3API=> {
+            this._setEndpoint(`/profile/${battleTag}/hero/${heroId}/items`);
+            return this;
+          },
+        };
+      },
+      followers: { of: {
+        hero: (heroId: number)=> {
+          return {
+            in: (battleTag: string): D3API=> {
+              this._setEndpoint(`/profile/${battleTag}/hero/${heroId}/follower-items`);
+              return this;
+            },
+          };
+        },
+      }},
+    }}},
     profile: {
-      of: (battleTag: string): D3API=> {
-        this._setEndpoint(`/profile/${battleTag}`);
+      for: (battleTag: string): D3API=> {
+        this._setEndpoint(`/profile/${battleTag}/`);
         return this;
       },
     },
     hero: (heroId: number)=> {
       return {
-        of: (battleTag: string): D3API=> {
+        in: (battleTag: string): D3API=> {
           this._setEndpoint(`/profile/${battleTag}/hero/${heroId}`);
           return this;
         },
